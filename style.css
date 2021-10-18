@@ -1,0 +1,170 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  body {
+    font: 1.2em/1.2 Helvetica, aria, sans-serif;
+    margin: 0 3%;
+    
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    margin: .9em 0 0 0;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin: 1.5em 0 0 0;
+  }
+  
+  img {
+    max-width: 100%;
+    min-width: 100%; 
+  }
+/* filter (effect) params HERE 👇🏾*/ 
+ #one{
+   filter: blur(15px);
+ }
+
+  #two{
+filter: brightness(300%);
+  }
+
+  #three{
+    filter: saturate(500%);
+  }
+  #four{
+    filter: invert(0.9);
+  }
+  #five{
+    filter: contrast(500%);
+  }
+  #six{
+   filter: drop-shadow(blue 10x 20px 25px):
+  }
+  figure {
+    border: 5px black solid; 
+    border-radius: 5px;
+    color: white;
+    margin: 0 0 25px 0;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  figcaption {
+    font-size: .8em;
+  }
+  
+/* Look up a media query property */
+
+@media screen and (max-width:740px) and (min-width:340px){
+  body{
+    background-color: palevioletred;
+    margin: 25px 6%;
+  }
+  figure{
+    float: left;
+    width: 45%;
+    margin-right: 4.5%;
+  }
+}
+/* breakpoint two */
+@media screen and (max-width:1039px) and (min-width:741px){
+  body{
+    background-color: crimson;
+    margin:25px 8%;
+  }
+  figure{
+    float:left;
+    width:45%;
+    margin-right: 4.5%;
+  }
+}
+/* breakpoint three */
+@media screen and (min-width: 1040px) and (max-width:1800px){
+  body{
+    background-color: plum;
+    margin: 25px 10%;
+
+  }
+  figure{
+    width: 30%;
+    margin-right: 2.5%;
+  }
+}
+
+/* start hamburger style */
+
+/* start styling for hamburger menu */
+header>h1{
+  text-align: center;
+  font-size: 50px;
+  color: darkgreen;
+  transition-property: transform , font-size;
+  transition-duration: 2s;
+}
+
+header>h1:hover{
+  font-size: 57px;
+  transform: translateX(30px);
+}
+
+.nav{
+  text-align: left;
+  height: 50px;
+  line-height: 40px;
+}
+
+.menu{
+  margin: 0 30px 0 0;
+  display: inline;
+}
+
+.menu a{
+  text-decoration: none;
+  color:purple;
+  line-height: 50px;
+  margin-left: 15px;
+}
+
+label{
+  font-size: 25px;
+  line-height: 50px;
+  display: none;
+  margin: 0 40px 0 0;
+
+}
+
+#toggle{
+  display: none;
+}
+
+@media screen and (max-width:510px){
+  label{
+    display: block;
+  }
+  .menu{
+    text-align: left;
+    width: 100%;
+    font-size: 25px;
+    color: royalblue;
+    display: none;
+  }
+  .menu a{
+    display: block;
+    float:left;
+    margin: 0 10px;
+    font-size: 25px;
+  }
+
+  #toggle:checked + .menu{
+    display: block;
+  }
+}
