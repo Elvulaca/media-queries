@@ -1,3 +1,27 @@
+// start age verifier
+// var age = document.getElementById("age").innerHTML;
+// var adult = document.getElementById("adult").innerHTML;
+// var result = document.getElementById("answer").innerHTML;
+// var oldEnough = false;
+
+// function checkAge() {
+//     if (age.value >= 18) {
+//         oldEnough = true;
+//     } else {
+//         oldEnough = false;
+//     }
+//     if (oldEnough == false) {
+//         if (adult.value == "y") {
+//             result = "You are not old enough, but have an adult with you.";
+//         } else {
+//             result = "You are not old enough and are unaccompanied."
+//         }
+//     } else {
+//         result = "You are old enough."
+//     }
+// }
+// end age verifier
+// start fortune teller
 var fortunes = [
 
     "You will win a <em>1000</em> dollars! Yippee!",
@@ -26,7 +50,7 @@ function reset() {
 
 }
 
-
+// end fortune teller
 // function calculateDogAge(puppyAge, humanAge) {
 
 //     var nn = puppyAge * 7;

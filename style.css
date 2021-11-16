@@ -52,7 +52,7 @@ img {
 }
 
 #six {
-    filter: drop-shadow(blue 10x 20px 25px):
+    filter: drop-shadow(blue 10x 20px 25px);
 }
 
 figure {
